@@ -8,7 +8,7 @@ public class SubArray {
 			
 			for(int e=s; e<arr.length;e++) {
 				
-				System.out.println("( Cut is "+ s+" ,"+e+")");
+				System.out.println("(Cut is "+ s+" ,"+e+")");
 				
 				for(int k=s; k<=e;k++) {
 					System.out.print(arr[k]+" ");
