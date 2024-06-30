@@ -17,6 +17,7 @@ public class Sum_ofArray {
 		 // TODO Auto-generated method stub
         int [] arr= {1,2,3,4,5};
         System.out.println(SumArray(arr, 0));
+        Object obj;
 	}
 
 }
