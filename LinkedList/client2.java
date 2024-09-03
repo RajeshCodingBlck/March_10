@@ -6,6 +6,18 @@ public class client2 {
 		// TODO Auto-generated method stub
      MylinkedList list= new MylinkedList();
      
+     
+     list.InsertAtbegin(10);
+     list.InsertAtEnd(30);
+     list.InsertAtbegin(100);
+     list.display();
+     list.removeAtBegin();
+     
+     list.display();
+     list.InsertAtbegin(200);
+     list.removeAtEnd();
+     list.display();
+     
 //     list.InsertAtbegin(20);
 //     list.InsertAtbegin(40);
 //     list.InsertAtbegin(60);
@@ -14,9 +26,9 @@ public class client2 {
 //    	   list.InsertAtbegin(i);
 //       }
        
-       list.InsertAtEnd(30);
-     
-     list.display();
+//       list.InsertAtEnd(30);
+//     
+//     list.display();
 	}
 
 }

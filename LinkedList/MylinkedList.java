@@ -22,6 +22,8 @@ public class MylinkedList {
 			System.out.print(temp.data+ "->");
 			temp=temp.next;
 		}
+		
+		System.out.println();
 	}
 	
 	public void InsertAtEnd(int val) {
@@ -39,4 +41,78 @@ public class MylinkedList {
 		// creating a link between Tail Node to newNode...
 		temp.next=newNode;
 	}
+	
+	public void removeAtBegin() {
+		
+		 if(head==null) {
+			 return;
+		 }
+		  //head=head.next;
+		 Node temp= head;
+		 head=head.next; // shift by one
+		 temp.next=null; // Link break ho jata he.	 	 
+	}
+	
+	public void removeAtEnd() {
+		
+		if(head==null) {
+			return;
+		}
+		if(head.next==null) {
+			head=null;
+			return;
+		}
+		Node temp=head;
+		while(temp.next.next !=null) {
+			temp= temp.next;
+		}
+		temp.next=null;
+		
+	}
+	
+	public int size() {
+		
+		int size=0;
+		Node temp= head;
+		while(temp !=null) {
+			
+			size++;
+			temp=temp.next;	
+		}
+		return size;
+	}
+	
+	public void addAtIndex(int index, int val) {
+		
+		Node temp= head;
+		int jump=index-1;
+		
+		while(jump>0) {
+			temp=temp.next;
+			jump--;
+		}
+		Node temp2=  temp.next;
+		Node newNode= new Node(val);
+		temp.next=newNode;
+		newNode.next=temp2;
+		
+	}
+	
+	public void removeAtIndex(int index) {
+		
+		Node temp= head;
+		int jump=index-1;
+		
+		while(jump>0) {
+			temp=temp.next;
+			jump--;
+		}
+		Node temp2= temp.next;
+		temp.next=temp2.next;
+		temp2.next=null;
+		
+		
+	}
+	
+	
 }
