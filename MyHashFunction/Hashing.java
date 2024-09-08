@@ -2,7 +2,7 @@ package MyHashFunction;
 
 public class Hashing {
     
-//	[0, 9] Small Data Set
+//	[0, 9] Small Data Set -> r-l+1
 	public static int HashFunction(String str) {
 		
 		    int hashValue =Math.abs(str.hashCode());
