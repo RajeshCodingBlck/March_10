@@ -27,7 +27,6 @@ public class HouseRobbery {
 	    public int rob(int[] nums) {
 	        
 	        int [] brain= new int[nums.length+1];
-	        
 	        for(int i=0; i<brain.length;i++){
 	            brain[i]=-1;
 	        }
