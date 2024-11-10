@@ -9,8 +9,8 @@ public class Max_of_three {
       
 		Scanner s= new Scanner(System.in);
 		
-		int a= s.nextInt();
-		int b=s.nextInt();
+		int a= s.nextInt(); // Me a ka input le raha hu.
+		int b=s.nextInt();  
 		int c= s.nextInt();
 		
 		if(a>b && a>c) {
